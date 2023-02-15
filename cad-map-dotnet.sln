@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.33328.57
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cad-map-dotnet", "cad-map-dotnet\cad-map-dotnet.csproj", "{2A9AD923-5DA2-44C8-8695-179C5F6AEFAE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bin", "bin", "{161A10C8-FC15-4E4C-9328-6D91518A5A80}"
-	ProjectSection(SolutionItems) = preProject
-		cad-map-dotnet\bin\Debug\cad-map-dotnet.dll = cad-map-dotnet\bin\Debug\cad-map-dotnet.dll
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
