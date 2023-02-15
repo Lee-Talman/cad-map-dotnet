@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="cad_map_dotnet" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="connstr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=LAT-ENGUSA\SQLEXPRESS;Database=CADDB;Trusted_Connection=True;
+</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
