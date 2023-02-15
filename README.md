@@ -2,7 +2,7 @@
 A tool to capture Block entity data from DWG files using the AutoCAD .NET API.
 
 # Installation
-Using the NETLOAD command, import the `cad-map-dotnet.dll` from cad-map-dotnet/bin. You'll need a SQL database formatted appropriately to store the information - either generate one yourself from reading the SQL write-out commands in the DBLoadUtil.cs class (I would be very impressed if you could do this) or wait for me to add the SQL database templates to the repository.
+Using the NETLOAD command, import the `cad-map-dotnet.dll` from cad-map-dotnet/bin. You'll need a SQL database formatted appropriately to store the information - either generate one yourself from reading the SQL write-out commands in the DBLoadUtil.cs class (I would be very impressed if you could do this) or load it from `SQLManager_CADDB.sql`.
 
 # Contribute
 More is coming here shortly, but for now you'll want to 
