@@ -190,6 +190,7 @@ namespace cad_map_dotnet
                     // Check if an object is selected
                     if (ssPrompt.Status == PromptStatus.OK)
                     {
+                        string name = "";
                         string layer = "", ltype = "";
                         string coords = "";
                         double len = 0.0;
@@ -205,6 +206,7 @@ namespace cad_map_dotnet
                         foreach (SelectedObject sObj in ss)
                         {
                             pline = trans.GetObject(sObj.ObjectId, OpenMode.ForRead) as Polyline;
+                            name = pline.BlockName;
                             layer = pline.Layer;
                             ltype = pline.Linetype;
                             len = pline.Length;
@@ -212,6 +214,7 @@ namespace cad_map_dotnet
                             isClosed = pline.Closed;
 
                             SqlCommand cmd = new SqlCommand(sql, conn);
+                            cmd.Parameters.AddWithValue("@Name", name);
                             cmd.Parameters.AddWithValue("@Layer", layer);
                             cmd.Parameters.AddWithValue("@Linetype", ltype);
                             cmd.Parameters.AddWithValue("@Length", len);
@@ -353,7 +356,7 @@ namespace cad_map_dotnet
                         string layer = "";
                         double rotation = 0.0, width = 0.0, height = 0.0;
                         BlockReference blk;
-                        string insPt = "";
+                        // string insPt = "";
                         string attributes = "";
                         SelectionSet ss = ssPrompt.Value;
 
@@ -414,7 +417,10 @@ namespace cad_map_dotnet
                                 }
                                 */
 
-                                attributes = attributes.Substring(0, attributes.Length - 1); // remove last comma
+                                if (attributes.Length > 1)
+                                {
+                                    attributes = attributes.Substring(0, attributes.Length - 1); // remove last comma                                                                 
+                                }
 
                                 SqlCommand cmd = new SqlCommand(sql, conn);
                                 cmd.Parameters.AddWithValue("@InsPtX", insPtX);
