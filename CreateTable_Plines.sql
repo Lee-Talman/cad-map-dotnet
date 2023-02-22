@@ -1,7 +1,7 @@
 USE [CADDB]
 GO
 
-/****** Object:  Table [dbo].[Plines]    Script Date: 2/15/2023 12:59:51 AM ******/
+/****** Object:  Table [dbo].[Plines]    Script Date: 2/22/2023 10:45:35 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,8 +10,9 @@ GO
 
 CREATE TABLE [dbo].[Plines](
 	[Id] [bigint] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](50) NULL,
 	[Layer] [varchar](50) NOT NULL,
-	[Linetype] [varbinary](50) NULL,
+	[Linetype] [varchar](50) NULL,
 	[Length] [real] NULL,
 	[Coordinates] [varchar](max) NOT NULL,
 	[IsClosed] [bit] NULL,

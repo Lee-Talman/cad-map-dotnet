@@ -1,17 +1,19 @@
 USE [CADDB]
 GO
 
-/****** Object:  Table [dbo].[BlocksNoAttribute]    Script Date: 2/15/2023 1:01:43 AM ******/
+/****** Object:  Table [dbo].[BlocksWithoutAttributes]    Script Date: 2/22/2023 10:44:51 AM ******/
 SET ANSI_NULLS ON
 GO
 
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE TABLE [dbo].[BlocksNoAttribute](
+CREATE TABLE [dbo].[BlocksWithoutAttributes](
 	[Id] [bigint] IDENTITY(1,1) NOT NULL,
 	[InsertionPt] [varchar](50) NOT NULL,
 	[BlockName] [varchar](50) NULL,
+	[ExtX] [decimal](18, 8) NULL,
+	[ExtY] [decimal](18, 8) NULL,
 	[Layer] [varchar](50) NULL,
 	[Rotation] [real] NULL,
 	[Created] [datetime] NULL,

@@ -1,7 +1,7 @@
 USE [CADDB]
 GO
 
-/****** Object:  Table [dbo].[MTexts]    Script Date: 2/15/2023 12:57:01 AM ******/
+/****** Object:  Table [dbo].[MTexts]    Script Date: 2/22/2023 10:45:24 AM ******/
 SET ANSI_NULLS ON
 GO
 

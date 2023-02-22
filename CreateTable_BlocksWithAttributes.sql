@@ -1,7 +1,7 @@
 USE [CADDB]
 GO
 
-/****** Object:  Table [dbo].[BlocksWithAttributes]    Script Date: 2/15/2023 1:04:29 AM ******/
+/****** Object:  Table [dbo].[BlocksWithAttributes]    Script Date: 2/22/2023 10:44:24 AM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -10,8 +10,11 @@ GO
 
 CREATE TABLE [dbo].[BlocksWithAttributes](
 	[Id] [bigint] IDENTITY(1,1) NOT NULL,
-	[InsertionPt] [varchar](50) NOT NULL,
+	[InsPtX] [decimal](18, 8) NOT NULL,
+	[InsPtY] [decimal](18, 8) NOT NULL,
 	[BlockName] [varchar](50) NULL,
+	[ExtX] [decimal](18, 8) NULL,
+	[ExtY] [decimal](18, 8) NULL,
 	[Layer] [varchar](50) NULL,
 	[Rotation] [real] NULL,
 	[Attributes] [varchar](max) NULL,
