@@ -15,4 +15,4 @@ Download [SQL Server Express](https://www.microsoft.com/en-us/Download/details.a
 
 3. Change the `connstr` value in `Settings1.settings` to point at the path of your database. If you're using a non-trusted connection, or any other type of connection, reference the [SQL server connection string types at this link](https://www.connectionstrings.com/sql-server/).
 
-4. Finally, build the project by running it using the Start command. You'll find the compiled .dll in `cad-map-dotnet\bin\debug` as `cad-map-dotnet.dll`. Load this in AutoCAD using the `NETLOAD` command, then run CAD-MAP by running the `CADMAP` command.
+4. Finally, build the project by running it using the Build command (Ctrl+Shift+B by default). You'll find the compiled .dll in `cad-map-dotnet\bin\debug` as `cad-map-dotnet.dll`. Load this in AutoCAD using the `NETLOAD` command, then run CAD-MAP by running the `CADMAP` command.
